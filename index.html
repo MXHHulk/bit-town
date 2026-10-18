@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>位元鎮 Bit Town</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game"></div>
+
+      <div id="dialog" class="hidden">
+        <div id="dialog-name"></div>
+        <div id="dialog-text"></div>
+        <div id="dialog-next">按 空白鍵 / E 繼續 ▼</div>
+      </div>
+
+      <aside id="panel" class="hidden">
+        <header>
+          <div>
+            <div id="panel-concept"></div>
+            <h2 id="panel-title"></h2>
+          </div>
+          <button id="btn-close" title="關閉">✕</button>
+        </header>
+        <div id="panel-desc"></div>
+        <div id="editor"></div>
+        <div class="toolbar">
+          <button id="btn-run" class="primary">▶ 執行</button>
+          <button id="btn-hint">💡 提示</button>
+          <button id="btn-reset">↺ 重來</button>
+          <span id="py-status">Python 載入中…</span>
+        </div>
+        <div id="hint" class="hidden"></div>
+        <div id="output"></div>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
